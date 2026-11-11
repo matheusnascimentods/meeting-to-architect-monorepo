@@ -13,7 +13,7 @@
 
 > Transforme transcrições de reuniões em diagramas de arquitetura UML e C4 automaticamente com IA.
 
-O **M2A (Meeting to Architecture)** é um projeto acadêmico da disciplina **Exploração Digital** da **Universidade Anhembi Morumbi**: uma plataforma web projetada para eliminar o trabalho manual de documentação técnica. Utilizando uma arquitetura de multi-agentes (Google Gemini + [Agent Development Kit](https://www.npmjs.com/package/@google/adk)), o M2A processa transcrições de reuniões (`.md` ou `.pdf`) e gera diagramas em formato Mermaid, que podem ser revisados, editados, exportados em SVG e compartilhados com um time.
+O **M2A (Meeting to Architecture)** é um projeto acadêmico da disciplina **Exploração Digital**, do curso de **Ciência da Computação** da **Universidade Anhembi Morumbi**: uma plataforma web projetada para eliminar o trabalho manual de documentação técnica. Utilizando uma arquitetura de multi-agentes (Google Gemini + [Agent Development Kit](https://www.npmjs.com/package/@google/adk)), o M2A processa transcrições de reuniões (`.md` ou `.pdf`) e gera diagramas em formato Mermaid, que podem ser revisados, editados, exportados em SVG e compartilhados com um time.
 
 Este repositório é um **monorepo npm workspaces** com duas aplicações:
 
@@ -757,7 +757,7 @@ O Postgres do compose usa credenciais fixas de desenvolvimento: usuário `postgr
 
 ## 🎓 Contexto Acadêmico
 
-Projeto acadêmico desenvolvido para a disciplina **Exploração Digital** da **Universidade Anhembi Morumbi**.
+Projeto acadêmico desenvolvido para a disciplina **Exploração Digital**, do curso de **Ciência da Computação** da **Universidade Anhembi Morumbi**.
 
 ---
 
