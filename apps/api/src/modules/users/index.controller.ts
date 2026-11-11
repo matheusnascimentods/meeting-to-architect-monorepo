@@ -30,9 +30,7 @@ export class UsersController {
 
   @Get('me')
   async getMe(@Request() req) {
-    const user = await this.usersService.findById(req.user.sub);
-    const { password_hash, ...result } = user;
-    return result;
+    return this.usersService.findById(req.user.sub);
   }
 
   @Get(':id')
@@ -43,7 +41,9 @@ export class UsersController {
   @SkipAuth()
   @Get('get-by-email/:email')
   async findByEmail(@Param('email') email: string) {
-    return this.usersService.findByEmail(email);
+    // Rota pública usada no passo de e-mail do login: expõe só o necessário para a tela
+    const user = await this.usersService.findByEmail(email);
+    return user ? { email: user.email, name: user.name } : null;
   }
 
   @Delete(':id')
