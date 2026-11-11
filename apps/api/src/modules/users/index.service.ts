@@ -45,7 +45,6 @@ export class UsersService {
       id: data.id,
       email: data.email,
       name: data.name,
-      password_hash: data.passwordHash,
       created_at: data.createdAt.toISOString(),
     };
   }
@@ -57,7 +56,6 @@ export class UsersService {
       id: data.id,
       email: data.email,
       name: data.name,
-      password_hash: data.passwordHash,
       created_at: data.createdAt.toISOString(),
     };
   }

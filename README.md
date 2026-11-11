@@ -580,7 +580,7 @@ Todas as rotas exigem `Authorization: Bearer <token>`, exceto as marcadas como �
 | Método | Rota | Descrição | Acesso |
 | :--- | :--- | :--- | :--- |
 | `POST` | `/user` | Cadastro (`email`, `password`, `name`); responde `{ message, token }`. E-mail repetido → 409 | 🔓 Público |
-| `GET` | `/user/get-by-email/:email` | Busca usuário por e-mail (usada na etapa de e-mail do login) | 🔓 Público |
+| `GET` | `/user/get-by-email/:email` | Verifica se o e-mail tem conta (usada na etapa de e-mail do login); retorna só `email` e `name`, ou `null` | 🔓 Público |
 | `GET` | `/user/me` | Dados do usuário logado | ✅ Autenticado |
 | `GET` | `/user/:id` | Busca usuário por ID | ✅ Autenticado |
 | `PATCH` | `/user/:id` | Atualiza `name` e/ou `email` | ✅ Só o próprio usuário |
